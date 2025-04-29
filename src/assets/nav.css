@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 9999; /* Ensures navbar stays on top */
+    padding: 20px;
+    backdrop-filter: blur(15px) !important;
+    background-color: #1b1a2ea9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: large;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+.fa {
+    position: relative;
+    top: 5px;
+}
+
+body {
+    padding-top: 80px; /* Prevent content from being overlapped by navbar */
+}

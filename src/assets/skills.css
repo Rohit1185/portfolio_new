@@ -1,0 +1,88 @@
+.skills-section {
+    color: whitesmoke;
+    text-align: center;
+    padding: 130px 20px 50px; /* Adjusted padding to prevent overlap with navbar */
+}
+
+.skills-section h1 strong {
+    color: #C770F0;
+}
+
+.skills-container, .tools-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 500px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.skill-card > .skill-content > .pet-img{
+    height: 250px;
+    position: relative;
+    top: -8px;
+    left: 1px;
+    width: 398px;
+}
+.skill-card > .skill-content >.cargo-img{
+    position: relative;
+    top: 0px;
+    height: 240px;
+    width: 399px;
+}
+.skill-card > .skill-content > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 270px;
+    position: relative;
+    bottom: 20px;
+    width: 400px;
+    z-index: 1;
+}
+
+.skill-content > h2, .skill-content > p {
+    margin: 10px;
+}
+.skill-card:hover, .tool-card:hover {
+    transform: scale(1.05);
+    transition: all ease 0.3s;
+    box-shadow: 0px 0px 20px #cd8fea;
+}
+
+.skill-content h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.skill-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#githubp {
+    width: 200px;
+    height: 40px;
+    background-color: #cd8fea;
+    display: flex;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 80px;
+}
+
+#github {
+    height: 30px;
+    width: 30px;
+}
