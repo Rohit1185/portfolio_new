@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import '../assets/nav.css';
 import { FaBars, FaTimes, FaAddressBook, FaFile, FaFileContract, FaHome, FaProjectDiagram } from "react-icons/fa";
-import resume from '../../public/Rohit_Resume_3-4.pdf';
+import resume from '../assets/Rohit_Resume_3-4.pdf';
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
