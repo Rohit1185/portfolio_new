@@ -1,11 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 nav {
-    z-index: 9999; /* Ensures navbar stays on top */
+    z-index: 9999;
     padding: 20px;
     backdrop-filter: blur(15px) !important;
     background-color: #1b1a2ea9;
@@ -15,7 +9,21 @@ nav {
     font-size: large;
 }
 
-ul {
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Default Desktop Styles */
+.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,11 +40,34 @@ li > a:hover {
     text-decoration: underline;
 }
 
-.fa {
-    position: relative;
-    top: 5px;
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1b1a2e;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    li > a {
+        font-size: 18px;
+    }
 }
 
 body {
-    padding-top: 80px; /* Prevent content from being overlapped by navbar */
+    padding-top: 80px;
 }

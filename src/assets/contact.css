@@ -60,3 +60,88 @@
     text-align: center;
   }
   
+  /* Responsive styles for contact section */
+
+/* Tablets and below (up to 768px) */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .contact-input, .contact-textarea {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .contact-button {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+/* Devices up to 425px */
+@media (max-width: 425px) {
+  .contact-container {
+    padding-top: 100px;
+  }
+
+  .contact-form > h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .contact-result {
+    font-size: 14px;
+  }
+}
+
+/* Devices up to 375px */
+@media (max-width: 375px) {
+  .contact-form > h1 {
+    font-size: 20px;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 13px;
+  }
+
+  .contact-button {
+    font-size: 13px;
+  }
+}
+
+/* Devices up to 320px */
+@media (max-width: 320px) {
+  .contact-form {
+    padding: 10px;
+  }
+
+  .contact-form > h1 {
+    font-size: 18px;
+  }
+
+  .contact-input, .contact-textarea {
+    font-size: 12.5px;
+  }
+
+  .contact-button {
+    font-size: 12.5px;
+    padding: 7px;
+  }
+
+  .contact-result {
+    font-size: 13px;
+  }
+}

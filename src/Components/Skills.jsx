@@ -7,7 +7,7 @@ function Skills() {
     
     return (
         <div className='skills-section'>
-            <h1>Professional <strong>Skillset</strong></h1>
+            <h1>Projects <strong>Skillset</strong></h1>
             <div className='skills-container'>
                 <div className='skill-card'>
                     <div className='skill-content'>
